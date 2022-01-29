@@ -6,7 +6,7 @@
 <p>Step 1:</p>
 
 ```
-git clone
+git clone https://github.com/emiinacio/randomUser-react-js.git
 ```
 
 <p>Step 1:</p>
