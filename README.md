@@ -1,6 +1,6 @@
 <h1>Random User API with React</h1>
 
-# How To Use:
+<h3>How To Use:</h3>
 <p>Step 1:</p>
 
 ```
