@@ -3,7 +3,7 @@ import Location from './Location';
 
 const UserCards = ({ userData }) => {
     return (
-        <div className='card'>
+        <div className='card' >
             <div className='card__picture'>
                 <div className='card__image'><img src={userData.picture.large} alt="Image person" /></div>
             </div>

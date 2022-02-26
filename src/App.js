@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import UserCards from "./components/UserCards";
-import Localization from "./components/Location"
+import Modal from './components/Modal';
 import "./App.css";
 
 function App() {
   const [users, setUsers] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
+  
 
   useEffect(() => {
     (async () => {
@@ -42,21 +43,24 @@ function App() {
 
   return (
     <div className="App">
+
       <div className='header'>
         <h1>Comunidade</h1>
         <input className='search__box' placeholder='Seach...' onInput={filterCards}/>
       </div>
+
       <div className='cards__container'>
         {users.slice(0, visible).map((user, index) => (
           <UserCards userData={user} key={index} />
         ))}
       </div>
+
       <div className='button__viewmore'>
         <button onClick={showMoreCards}>
           <a href='#'>Ver mais</a>
         </button>
-      </div>
-    </div>
+      </div>      
+    </div>   
   );
 }
 

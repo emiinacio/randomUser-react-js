@@ -13,7 +13,7 @@
 .cards__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
-    justify-items: center;
+    justify-content: center
 }
 
 h1, a, p {
